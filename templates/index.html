@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel='shortcut icon' type='image/x-icon' href='/static/img/favicon505.ico' />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="static/w3.css">
+  <link rel="stylesheet" href="static/style-home.css?1017">
+
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <!--integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"-->
+  
+  
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CHANGE BEFORE PRODUCTION  SOCIAL MEDIA -->
+  <meta property="og:title" content="Covid-bot">
+  <meta property="og:description" content="AI powered chatbot that answers all your questions about COVID-19.">
+  <meta property="og:image" content="https://github.com/waelmas/covid-bot/blob/master/static/img/covid-bot-size2.png?raw=true">
+  <meta property="og:url" content="https://covid-bot.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!--  Non-Essential, But Recommended -->
+
+  <meta property="og:site_name" content="COVID-BOT by Innaton Technologies Ltd.">
+
+  <!-- END SOCIAL MEDIA -->
+
+
+
+
+
+ 
+
+  
+
+
+
+
+
+
+  <script defer src="static/solid.js"></script>
+  <script defer src="static/fontawesome.js" ></script>
+
+  <title>COVID-bot — Your COVID-19 Personal Assistant</title>
+</head>
+
+<body class="main-surface">
+ <!-- In case search engines skip the title tag-->
+    <h1 style="display: none;">COVID-bot — Your COVID-19 Personal Assistant</h1>
+
+  <div id="gen-chat" class="w3-container w3-center">
+    <!-- Title-->
+
+    <nav id="sidebar">
+      <div id="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+
+      <div class="sidebar-header">
+        <h3><a style="color: white;" href="/">COVID-bot</a></h3>
+      </div>
+
+      <ul class="list-unstyled components">
+
+
+        <li>
+          <a href="https://covid-bot.com/">Home</a>
+        </li>
+        <li>
+            <a href="javascript:openFrame();">Try Me</a>
+          </li>
+
+
+
+        <li>
+          <a href="https://github.com/waelmas/covid-bot">Embed COVID-bot</a>
+        </li>
+        <li>
+            <a href="https://covid-bot.tumblr.com/">Latest News</a>
+          </li>
+        <li>
+            <a href="https://covid-bot.com/privacy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="https://covid-bot.com/cookies">Cookies Policy</a>
+          </li>
+        <li>
+                            <a href="https://www.gofundme.com/your-covid19-personal-assistant" target="_blank">Support Us</a>
+                        </li>
+ 
+
+      </ul>
+
+    </nav>
+    <!-- END of buttons bar -->
+  </div>
+
+  <!-- Chat box -->
+  <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid">
+
+        <button type="button" id="sidebarCollapse" class="btn btn-custom" style="background-color: #7441e9;">
+          <i class="fas fa-align-left"></i>
+
+        </button>
+
+      </div>
+    </nav>
+
+    <div class="main-content">
+
+      <!-- BEGIN MAIN CONTENT -->
+      <div class="header101">
+
+<!--First row-->
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="mobile-fix-md col-lg-6 col-md-12 center-on-small wow fadeIn" data-wow-delay="0.3s">
+                        
+                        <h1 class="font-big font-bold font-up mb-1-half">AI powered chatbot answering all your questions about COVID-19.</h1>
+                        <p style="color: black; font-size: 1.3em;" align="justify">How much do you think you know about the virus? The purpose of COVID-bot is to provide meaningful and accurate answers to the user queries, regarding COVID-19 precautions, preventions and the current situation per country. This is an English beta version and it can be used only for COVID-19 related questions.</p>
+                   
+                      <div class="video-btn-container" style="padding-bottom: 2vh;">
+<a class="video-btn" onclick="openFrame();">Get Started</a>
+<a class="video-btn2" style="color: white;" onclick="location.href='https://www.gofundme.com/your-covid19-personal-assistant';" >Support Us</a>
+
+
+</div>
+
+<div class="video-btn-container">
+
+
+ <a class="video-btn2"  target="_blank" href="https://github.com/waelmas/covid-bot" >Embedded</a>
+</div>
+
+ <br>
+                        
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="video-holder mobile-fix-md col-lg-6 col-md-12  center-on-small-only wow fadeIn" data-wow-delay="0.2s">
+                        <video id="InformationVideo" class="video information__video" preload="auto" autobuffer autoload autoplay loop controls>
+                            <source src="static/img/covid-bot-latest.mp4" type="video/mp4">
+                                
+                        </video>
+                    </div>
+                    <!--/Second column-->
+      </div>
+      <!-- END MAIN CONTENT -->
+
+      <hr class="between-sections">
+
+                  <!--Section: Features v.1-->
+                  <section id="features" class="section feature-box mt-4" style="background-color: white; text-decoration: none;" >
+
+                
+
+                        <div><br></div>
+
+                    <!--First row-->
+                    <div class="row features-big">
+                        <!--First column-->
+                        <div class="col-md-4 mb-1 wow fadeIn" data-wow-delay="0.4s">
+                         
+                            <h4 class="feature-title" style="font-weight: 900;">Features</h4>
+                            <p class="fulljustify black-text" style="color: #2b2b2bfa; font-size: 0.9em;">By understanding simple keywords and their meaning, it gives answers to simple and complex questions, myths, facts, data about COVID-19, identifies different personas, and provides tailored information to each specific user.</p>
+                        </div>
+                        <!--/First column-->
+    
+                        <!--Second column-->
+                        <div class="col-md-4 mb-1 wow fadeIn" data-wow-delay="0.4s">
+                         
+                            <h4 class="feature-title" style="font-weight: 900;">Purpose</h4>
+                            <p class="fulljustify black-text" style="color: #2b2b2bfa; font-size: 0.9em;">COVID-bot provides meaningful and accurate answers to the user queries, regarding COVID-19 precautions, preventions, and the current situation per country. The aim is to be used as the main dissemination prevention tool 24/7, replacing the hotlines of each country. </p>
+                        </div>
+                        <!--/Second column-->
+    
+                        <!--Third column-->
+                        <div class="col-md-4 mb-1 wow fadeIn" data-wow-delay="0.4s">
+                          
+                            <h4 class="feature-title" style="font-weight: 900;">Who Replies?</h4>
+                            <p class="fulljustify black-text" style="color: #2b2b2bfa; font-size: 0.9em;">A chatbot is a digital assistant that simulates human chat conversation through artificial intelligence (AI) and machine learning (ML). This is an English Beta Version. Interacting with the bot, helps it become smarter.</p>
+                        </div>
+                        <!--/Third column-->
+                    </div>
+                    <!--/First row-->
+    
+                </section>
+                <!--/Section: Features v.1-->
+
+                <hr class="between-sections">
+
+  <!--Section: About-->
+  <section id="about" class="section features-5" style="background-color: white; text-decoration: none;">
+
+
+
+    
+    <!--First row-->
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-lg-5 col-md-12 mb-r center-on-small-only wow fadeIn" data-wow-delay="0.2s">
+            <img src="static/img/demo1.gif" alt="" class="z-depth-0" style="max-width: 30%;">
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-lg-7 col-md-12 center-on-small wow fadeIn" data-wow-delay="0.3s">
+            <br>
+            <h1 class="font-big font-bold font-up mb-1-half" style="color: black;">Add COVID-bot to your website</h1>
+            <p class="black-text" align="justify" style="color: #2b2b2bfa; font-size: 0.9em;"> Would you like your website visitors to know that you care for them ?
+                If yes, then add COVID-bot pop-up to your website and help them get informed about COVID-19.
+                You can easily embed COVID-bot to your own website by following the steps explained on our <a target="_blank" href="https://github.com/waelmas/covid-bot" >GitHub Repository</a>. </p>
+            
+            
+        </div>
+        <!--/Second column-->
+    </div>
+    <!--/First row-->
+
+</section>
+<!--/Section: About-->
+              
+<hr class="between-sections">
+
+<!--Section: Team-->
+<section id="testimonials" class="section team-section" style="background-color: white; text-decoration: none; margin: auto;">
+
+    <!--Section heading-->
+    <h1 class="section-heading wow fadeIn text-center" data-wow-delay="0.2s" style=" margin-left: auto; margin-right: auto;">Our Team</h1>
+    <!--Section description-->
+
+
+    <!--1st row-->
+    <div class="row text-center" style="width: 100%!important; margin-left: auto; margin-right: auto;">
+
+         <!--<div class= "col-md-2"></div>-->  <!--to center the 2 cols-->
+
+        <!--First column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/wael.jpg" alt="Wael" style="width:150px;height:150px;"></center>
+                </div>
+
+                <!--Content-->
+                <h4>
+                    <center><a href=" https://www.linkedin.com/in/waelmas/"><i class="team-name1" aria-hidden="true"></i><span> Wael Al Masri </a>
+                    <span><a href=" https://www.linkedin.com/in/waelmas/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+                    </br> Full-stack & Business Development</center>
+                </h4>
+            </div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/nicole.jpg" alt="Nicole" style="width:150px;height:150px;"></center>
+                </div>
+
+                <!--Content-->
+                <h4>
+                    <center><a href="https://www.linkedin.com/in/nicoledouglas12/"><i class="team-name1" aria-hidden="true"></i><span> Nicole Douglas </a>
+                    <span><a href="https://www.linkedin.com/in/nicoledouglas12/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+                    </br> Data Sciences & Development </center>
+                </h4>
+               
+            </div>
+        </div>
+        <!--/Second column-->
+        <!--Third column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/daniil.jpeg" alt="Daniil" style="width:150px;height:150px;"></center>
+                </div>
+
+                <!--Content-->
+                <h4>
+                <center><a href="https://www.linkedin.com/in/daniilsourianos/"><i class="team-name1" aria-hidden="true"></i><span> Daniil Sourianos </a>
+                    <span><a href="https://www.linkedin.com/in/daniilsourianos/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+                    </br> Business Development & Outreach </center>
+                </h4>
+            </div>
+        </div>
+        <!--/Third column-->
+
+
+       <!-- <div class= "col-md-2"></div>-->  <!--to center the 2 cols-->
+
+    </div>
+    <!--/1st row-->
+
+<br>
+    <!--2nd row-->
+    <div class="row text-center" style="width: 100%!important; margin-left: auto; margin-right: auto;">
+
+        <!--First column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/artemis.jpg" alt="Daniil" style="width:150px;height:150px;"></center>
+                </div>
+
+                <!--Content-->
+                <h4>
+                <center><a href="https://www.linkedin.com/in/artemisavgerou/"><i class="team-name1" aria-hidden="true"></i><span> Artemis Avgerou </a>
+                    <span><a href="https://www.linkedin.com/in/artemisavgerou/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+                    </br> Digital Marketing </center>
+                </h4>
+            </div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/ina.jpg" alt="Mikaelina" style="width:150px;height:150px;"></center>
+                </div>
+
+                <!--Content-->
+                <h4>
+                    <center><a href="https://www.linkedin.com/in/mikaelina-liontou/"><i class="team-name1" aria-hidden="true"></i><span> Mikaelina Liontou </a>
+                    <span><a href="https://www.linkedin.com/in/mikaelina-liontou/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+                    </br> Biosciences & Medical Content </center>
+                </h4>
+               
+            </div>
+        </div>
+        <!--/Second column-->
+
+        <!--Third column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/athena.jpg" alt="Athena" style="width:150px;height:150px;"></center>
+                </div>
+                <!--Content-->
+                <h4>
+          <center><a href="https://www.linkedin.com/in/athina-stavrinidou/"><i class="team-name1" aria-hidden="true"></i><span>Athina Stavrinidou </a>
+          <span><a href="https://www.linkedin.com/in/athina-stavrinidou/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+          </br> Legal Advisory </center>
+               </h4>
+
+            </div>
+        </div>
+        <!--/Third column-->
+
+    </div>
+    <!--/2nd row-->
+
+</section>
+
+<!--/Section: Team-->
+
+<hr class="between-sections">
+<br>
+
+
+<!--Section: External Contributors-->
+<section id="testimonials" class="section team-section" style="background-color: white; text-decoration: none; margin: auto;">
+
+    <!--Section heading-->
+    <h1 class="section-heading wow fadeIn text-center" data-wow-delay="0.2s" style=" margin-left: auto; margin-right: auto;">External Contributors</h1>
+    <!--Section description-->
+
+
+ 
+
+<br>
+    <!--2nd row-->
+    <div class="row text-center" style="width: 100%!important; margin-left: auto; margin-right: auto;">
+
+        <!--First column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/pantelis.jpeg" alt="Daniil" style="width:120px;height:120px;"></center>
+                </div>
+
+                <!--Content-->
+                <h4>
+                <center><a href="https://www.linkedin.com/in/pantelis-panayiotou-701700169/"><i class="team-name1" aria-hidden="true"></i><span> Pantelis Panayiotou </a>
+                    <span><a href="https://www.linkedin.com/in/pantelis-panayiotou-701700169/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+                    </br></center>
+                </h4>
+            </div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/andrei.jpg" alt="name2" style="width:120px;height:120px;"></center>
+                </div>
+
+                <!--Content-->
+                <h4>
+                    <center><a href="https://www.linkedin.com/in/andrei-cusnir/"><i class="team-name1" aria-hidden="true"></i><span> Andrei Cusnir </a>
+                    <span><a href="https://www.linkedin.com/in/andrei-cusnir/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+                    </br></center>
+                </h4>
+               
+            </div>
+        </div>
+        <!--/Second column-->
+
+        <!--Third column-->
+        <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
+            <div class="testimonial">
+                <!--Avatar-->
+                <div class="avatar">
+                    <center style="padding-top: 3%;"><img class = "member-pic" src="static/img/murtaza.jpg" alt="name3" style="width:120px;height:120px;"></center>
+                </div>
+                <!--Content-->
+                <h4>
+          <center><a href="https://www.linkedin.com/in/murtaza-afzali-bb3a57114/"><i class="team-name1" aria-hidden="true"></i><span> Murtaza Afzali </a>
+          <span><a href="https://www.linkedin.com/in/murtaza-afzali-bb3a57114/"><img class="linkedin-icon" src="static/img/linkedin.png"></a> </span>
+          </br></center>
+               </h4>
+
+            </div>
+        </div>
+        <!--/Third column-->
+
+    </div>
+    <!--/2nd row-->
+
+</section>
+
+<!--/Section: External Contributors-->
+
+
+<hr class="between-sections">
+<br>
+
+                  <!--Section: Support Us-->
+                  <section id="features" class="section feature-box mt-4" style="background-color: white; text-decoration: none;" >
+
+                    <!--Section heading-->
+                    <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Happy to help us?</h1>
+
+                    <p class=" section-description lead wow fadeIn" style="color: #2b2b2bfa; text-align: left;" data-wow-delay="0.2s">We want COVID-bot to reach all people impacted by the virus, during and post COVID-19 crisis and provide them with a centralized source of trusted information in a user-friendly way. With the embedding link, any government and website can integrate it into its platform and easily reach a massive amount of people. Since our services are cloud-hosted, we have hosting expenses that grow with the increase of usage of COVID-bot.</p>
+                    <p class="section-description lead wow fadeIn" style="color: #2b2b2bfa; text-align: left; font-weight: 600;" data-wow-delay="0.2s">Support us to make COVID-bot available to more people around the world! </p>
+                                           
+                    <a class="video-btn" style="color: white;" onclick="location.href='https://www.gofundme.com/your-covid19-personal-assistant';" >Support Us</a>
+                            
+                                      
+
+    </section>
+<!--/Section: Support Us-->
+
+<br>
+<br>
+
+
+
+    </div>
+  </div>
+
+
+  <footer class="footer-distributed">
+        
+    <div class="footer-left">
+
+        <h3>Covid-bot</h3>
+
+        <p class="footer-links">
+            <a href="/" class="link-1">Home</a>
+            
+            <a href="https://www.gofundme.com/your-covid19-personal-assistant">Support Us</a>
+            <a href="https://covid-bot.tumblr.com/">Latest News</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/cookies">Cookies Policy</a>
+        </p>
+
+        <p class="footer-company-name">Innaton Technologies Ltd. © 2020</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p>Virtual due to COVID-19 outbreak</p>
+        </div>
+
+     
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:info@covid-bot.com">info@covid-bot.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>Covid-bot</span>
+            AI powered chatbot that answers all COVID-19 questions.
+        </p>
+
+        <div class="footer-icons">
+
+      <!--    <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a> -->
+
+        </div>
+
+    </div>
+
+</footer>        
+<!-- End of footer -->
+
+
+<div class="bgoverlay"></div>
+
+<!-- Import extra JS -->
+
+<script src="static/jquery.min.js"></script>
+<!-- Popper.JS integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" -->
+<script src="static/popper.min.js" ></script>
+<!-- Bootstrap JS integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"  crossorigin="anonymous"-->
+<script src="static/bootstrap.min.js" ></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="static/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- /Import JS code -->
+
+<!-- Extra custom JS code -->
+<script src="static/home.js?1003"></script>
+
+
+<!-- Navbar needed code 
+<script type="text/plain" class="ce-script">-->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#dismiss, .bgoverlay').on('click', function() {
+            $('#sidebar').removeClass('active');
+            $('.bgoverlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').addClass('active');
+            $('.bgoverlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+</script>
+<!-- /Navbar needed code -->
+
+
+<!-- Chatbot embedding -->
+<style>
+    .covid-chat{
+                padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+
+    position: fixed;
+    z-index: 1005;
+      bottom: 23px;
+      right: 28px;
+
+
+            }
+            .covid-out{
+                height: 700px; width:390px;
+                
+                max-height: 97vh;
+                max-width: 100%;
+                padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+    position: fixed;
+    z-index: 1005;
+      bottom: 30px;
+      right: 60px;
+      display: none;
+
+      -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    border-radius: 5%;
+    -khtml-border-radius: 5%;
+    border: 1px transparent;
+            }
+        
+
+
+
+            .embedded-chat{
+                height: 690px; width:390px;
+                max-height: 95vh;
+                background-color: white;
+            opacity: 1!important;
+            -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    border-radius: 5%;
+    -khtml-border-radius: 5%;
+    border: 1px solid #8d5fe5;
+
+            }
+
+.close-image{
+max-width: 5%;
+    top: 1vh;
+    position: relative;
+    float: right;
+    margin-right: -3.5vh!important;
+}
+
+            @media (max-width:764px) {  
+                .chat-icon{
+                    width: 17%!important;
+                    max-width: 17%!important;
+                }
+                
+                .covid-chat{
+                    max-height: 97vh;
+                padding: 5px 5px;
+      border: none;
+      cursor: pointer;
+    position: fixed;
+    z-index: 1005;
+      bottom: 10px;
+      right: 10px;
+
+
+            }
+            .covid-out{
+                height: 95%; width:100%;
+            
+                max-width: 100%;
+                padding: 0;
+                padding-bottom: 5%;
+      border: none;
+      cursor: pointer;
+    position: fixed;
+    z-index: 1005;
+      bottom: 0;
+      right: 0;
+      display: none;
+            }
+
+
+
+            .embedded-chat{
+                height: 100%; width:100%;
+                max-height: 95vh;
+                background-color: white;
+            opacity: 1!important;
+            }
+    .close-image{
+        max-width: 5%;
+        top: 1vh;
+        position: relative;
+        float: right;
+        margin-right: 3.5vh!important;
+    }
+              
+            }
+</style>
+
+
+    <div class="covid-out" id="covid-bot-outer" style="display: none;">
+       
+        <div style="height: 100%;">
+            <a href="javascript:closeFrame();"><img class="close-image" src="static/img/close2.png">
+            </a>
+
+        <iframe id="covid-frame"  src="/chat2" scrolling="yes" class="embedded-chat" sandbox="allow-scripts allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation">
+        </iframe> 
+
+        </div>
+        </div>
+
+<div id="covid-chat" class="covid-chat"> <a href="javascript:openFrame();"><img class="chat-icon" style="max-width: 5%; float: right;" src="static/img/covid-chat.png">
+</a></div>
+
+<script type="text/javascript">
+function closeFrame() {
+        document.getElementById("covid-bot-outer").style.display="none";
+        document.getElementById("covid-chat").style.display="unset";
+
+        var originalsettingofhost = localStorage.getItem("hostoverflow");
+        var bodyofhost = document.getElementsByTagName("BODY")[0];
+        bodyofhost.style.overflow=originalsettingofhost;
+
+
+    }
+    function openFrame() {
+        document.getElementById("covid-bot-outer").style.display="unset";
+        document.getElementById("covid-chat").style.display="none";
+      var opened= document.getElementById("covid-frame").src;
+      if (opened != "/chat2"){
+        document.getElementById("covid-frame").src="/chat2";
+      }else{}
+
+      var bodyofhost = document.getElementsByTagName("BODY")[0];
+        
+        try {
+            var originalsettingofhost = bodyofhost.style.overflow;
+        }
+        catch(err) {
+            var originalsettingofhost = "auto";
+        }
+        //save Host overflow to restore it when chat frame is closed (This is to prevent scrolling issues)
+        localStorage.setItem("hostoverflow", originalsettingofhost);
+
+        bodyofhost.style.overflow="hidden";
+
+    }
+
+
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+</script>
+
+
+<!-- /Chatbot embedding -->
+
+
+
+<!-- Cookies Policy-->
+<script id="ce-banner-html" type="text/plain">
+    
+<div id="cookieConsent">
+  
+    
+
+   <div style="margin-right: auto; margin-left: auto; text-align: center;"> Our website uses cookies to make sure that users have the best experience on our website. By clicking accept, you are agreeing to our use of cookies as explained in our <a href="/cookies" target="_blank">Cookies Policy</a>. 
+    <br> 
+    <input name="essentials" id="essentials" type="checkbox" checked="checked" disabled="disabled"/> <label for="essentials">Essentials</label>
+    <input name="essentials" id="essentials" type="checkbox"/> <label for="essentials">Statistics & Marketing</label>
+    <input name="essentials" id="essentials" type="checkbox"/> <label for="essentials">Third-party</label>
+    <a class="ce-accept-less cookieConsentOK" style="text-align: center; background-color:transparent;">Accept</a>
+    <a class="ce-accept cookieConsentOK" style="text-align: center;">ACCEPT ALL</a>
+    <!--<a class="ce-dismiss cookieConsentOK" style="text-align: center; background-color: transparent;" float:right; margin-left:auto;>x</a>-->
+    
+</div>
+</div>
+</script>
+<!-- /Cookies Policy-->
+
+<script src="static/cookies.js?120"></script>
+<script>
+  COOKIES_ENABLER.init({
+      scriptClass: 'ce-script',
+      script2Class: 'ce-script2',
+      iframeClass: 'ce-iframe',
+
+      acceptClass: 'ce-accept',
+      acceptlessClass: 'ce-accept-less',
+      dismissClass: 'ce-dismiss',
+      disableClass: 'ce-disable',
+
+
+
+
+      eventScroll: false,
+      scrollOffset: 200,
+
+      clickOutside: false,
+
+      cookieName: 'cookies-accepted',
+      cookieDuration: '365',
+      wildcardDomain: true,
+
+      iframesPlaceholder: true,
+      iframesPlaceholderHTML:
+          '<p>To view this content you need to'
+              +'<a href="#" class="ce-accept">Accept All Cookies</a>'
+          +'</p>',
+      iframesPlaceholderClass: 'ce-iframe-placeholder',
+
+      // Callbacks
+      onEnable: '',
+      onEnable2: '',
+      onDismiss: '',
+      onDisable: ''
+  });
+</script>
+<script>
+    function ceset(val){
+            
+            var value = typeof val !== "undefined" ? val : "E",
+                date, expires, host, domainParts, domain;
+
+            
+                date = new Date();
+                date.setTime(date.getTime()+(365*24*60*60*1000));
+                expires = "; expires="+date.toGMTString();
+            
+        
+       
+                document.cookie = 'cookies-accepted' +"="+ value+expires +"; path=/; domain=.covid-bot.com";
+           
+            
+            
+        }
+    function ceget(){
+                var cookies = document.cookie.split(";"),
+                l = cookies.length,
+                i, x, y;
+
+            for (i = 0; i < l; i++){
+                x = cookies[i].substr(0,cookies[i].indexOf("="));
+                y = cookies[i].substr(cookies[i].indexOf("=")+1);
+                x = x.replace(/^\s+|\s+$/g,"");
+                if (x == 'cookies-accepted') {
+                    return unescape(y);
+                }
+            }}
+    if (ceget() == 'E' || ceget() == 'undefined'){
+        if ( document.getElementById('ce-banner-html').style.display != 'none'){
+            ceset('E');
+        }
+
+    }
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel='shortcut icon' type='image/x-icon' href='/static/img/favicon505.ico' />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/w3.css">
+    <link rel="stylesheet" href="static/style3.css?503">
+
+        <link rel="stylesheet" href="static/bootstrap.min.css">
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+
+
+
+      <!-- CHANGE BEFORE PRODUCTION  SOCIAL MEDIA 
+      <meta property="og:title" content="Covid-bot">
+      <meta property="og:description" content="AI powered chatbot that answers all your questions about COVID-19.">
+      <meta property="og:image" content="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/91583103_117693216538382_5566502736326819840_n.jpg?_nc_cat=104&_nc_sid=e3f864&_nc_ohc=E-TNcnK1ZT0AX8Jw54G&_nc_ht=scontent-mad1-1.xx&oh=03e0768a434391a58b735ec0a36c7b02&oe=5EA66683">
+      <meta property="og:url" content="https://covid-bot.com/">
+      <meta name="twitter:card" content="summary_large_image">-->
+      
+      
+      <!--  Non-Essential, But Recommended -->
+      
+      <meta property="og:site_name" content="COVID-BOT by Innaton Technologies Ltd.">
+      
+      <!-- END SOCIAL MEDIA -->
+
+
+
+     
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+     
+    <title>COVID-BOT V0.3</title>
+</head>
+
+<body class="main-surface">
+
+    <div id="gen-chat" class="w3-container w3-center">
+        <!-- Title-->
+       
+
+         
+
+        <!-- Chat box -->
+        <div id="content">
+
+
+
+             <div id="chat-cont-main" class="w3-container chat-cont-main-class center">
+                 
+            <div id="int-chat" class="int-chat1 chat-container">
+                <div class="privacyConsent" style="margin-right: auto; margin-left: auto; text-align: center;">We are committed to protecting the privacy and security of the visitors of our website. By using this service, you are agreeing to our <a href="https://covid-bot.com/privacy" target="_blank">Privacy Policy</a>.</div>
+                    
+                <div class="covid-head1">
+               
+                    <a href="https://www.covid-bot.com"><img style="max-width: 100%;" src="static/img/covid-by-innaton.png" alt="Innaton" /> </a>
+                     
+                   </div>
+                   
+                <div>
+                    <div>
+
+                    </div>
+
+                    <div class="w3-panel card101container w3-center">
+                        <!-- First Tryme Grid-->
+
+                    </div>
+
+                    <script>
+                        function autoFill101(contenttext) {
+                            $('#input_message').val(contenttext);
+                            $('#input_message').submit();
+                            //document.getElementById("avatarhm").src="http://teams-service.googleplex.com/photos/waela?sz=48";
+                            //$('#userimgin').submit();
+                            return
+                        }
+        function submit_clicked(){
+      $('#input_message').submit();
+
+}
+
+                    </script>
+
+<div id="botmsg">
+    
+   <div class="w3-container w3-center bot-message">
+   
+       <div class="bcontainer">
+        <img class="bot-img" width="40" height="40" src="static/img/bot_icon2.png" alt="Bot Avatar" style="float:right!important;" >
+          <div class="ml-1">
+           <h4 class="w3-text-white text-left">Hello there, I'm Covid-bot.</h4> <h4 class="w3-text-white text-left"> You can ask me anything about COVID-19 just like asking a human...</h4>
+            <h6 class="w3-text-white text-left">If you don't know what to ask, click on "Example questions".</h6>
+            <br>
+        
+           </div>
+               
+             
+
+               <div class="w3-center w3-container mb-2"  style="text-align: center!important;">
+
+                   <!-- Buttons bar -->
+                   <div class="w3-bar w3-center"  style="text-align: center!important;">
+                       <button class="btn btn-suggestions" type="button" onClick="show_examples(); return false;">Example questions</button>
+                     <br>
+
+<button class="btn btn-suggestions" onClick="about_me(); return false;" role="button" id="tryme">About me</button>
+                   </div>
+                   <!-- END of buttons bar -->
+
+               </div>
+             
+
+         
+       </div>
+   </div>
+
+</div>
+    </div>
+    </div>
+                </div>
+            </div>
+
+        </div>
+                 
+   
+    <footer class="footer footer-background">
+        <div class="container-fluid footer-outer">
+        <!--  <button class="phone-btn fa fa-phone w3-left w3-button menu-btn w3-centered w3-round-xxlarge w3-display-bottomleft" onClick="autoFill101('COVID-19 emergency numbers'); return false;" role="button" id="tryme"> Emergency</button> -->
+
+        <div class="row h-100">
+            <!-- Input form -->
+        <div class="col-md-8 mx-auto align-self-center">
+
+            <form id="target">
+                <input class="chat-in w3-input" type="text" value="" placeholder="Ask me anything..." id="input_message" autocomplete="off"/>
+                <input type="hidden" id="userimgin" name="user-id" value="{{ user_id }}" />
+                
+                <!-- <input id="submittbn" type="submit" class="submit-btn fa" onclick="submit_clicked()" style="text-rendering: optimizeLegibility;">-->
+<!--<button id="submittbn" type="submit" class="submit-btn" onclick="submit_clicked()">
+    <img class="img-send" src="static/img/send.png" onmouseover="this.src='static/img/send_clicked.png';" onmouseout="this.src='static/img/send.png';" />
+</button>-->
+
+            </form>
+
+
+
+ </div>
+
+
+
+
+
+
+            </div>
+            </div>
+    </footer>
+        
+            </div>
+       
+
+        <!-- END of Chat box -->
+
+   
+    </div>
+ <div class="bgoverlay"></div>
+    <!-- Footer text input -->
+    <!-- End of footer text input -->
+
+    <script src="static/jquery.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="static/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="static/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="static/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+
+    <script src="static/custom.js?2020502"></script>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .bgoverlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.bgoverlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.bgoverlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
