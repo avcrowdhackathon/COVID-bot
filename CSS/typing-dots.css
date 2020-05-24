@@ -1,0 +1,151 @@
+.typing-dots {
+    position: absolute;
+    vertical-align: middle;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: left;
+            justify-content: left;
+  }
+  .typing-dot {
+    width: 5px;
+    height: 5px;
+    background: #4e4376;
+    border-radius: 50%;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .typing-dot:nth-child(0) {
+    -webkit-animation: wave 0.75s 0s ease-in-out infinite;
+            animation: wave 0.75s 0s ease-in-out infinite;
+  }
+  .typing-dot:nth-child(1) {
+    -webkit-animation: wave 0.75s 0.15s ease-in-out infinite;
+            animation: wave 0.75s 0.15s ease-in-out infinite;
+  }
+  .typing-dot:nth-child(2) {
+    -webkit-animation: wave 0.75s 0.3s ease-in-out infinite;
+            animation: wave 0.75s 0.3s ease-in-out infinite;
+  }
+  .typing-dot:nth-child(3) {
+    -webkit-animation: wave 0.75s 0.45s ease-in-out infinite;
+            animation: wave 0.75s 0.45s ease-in-out infinite;
+  }
+  @-webkit-keyframes wave {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    25% {
+      -webkit-transform: translateY(-1em);
+              transform: translateY(-1em);
+    }
+    50% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes wave {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    25% {
+      -webkit-transform: translateY(-1em);
+              transform: translateY(-1em);
+    }
+    50% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes fall {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    25% {
+      -webkit-transform: translateY(-1em);
+              transform: translateY(-1em);
+    }
+    75% {
+      -webkit-transform: translateY(3em);
+              transform: translateY(3em);
+    }
+    100% {
+      -webkit-transform: translateY(3em);
+              transform: translateY(3em);
+    }
+  }
+  @keyframes fall {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    25% {
+      -webkit-transform: translateY(-1em);
+              transform: translateY(-1em);
+    }
+    75% {
+      -webkit-transform: translateY(3em);
+              transform: translateY(3em);
+    }
+    100% {
+      -webkit-transform: translateY(3em);
+              transform: translateY(3em);
+    }
+  }
+  @-webkit-keyframes scrim {
+    0% {
+      -webkit-clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 100%);
+              clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 100%);
+    }
+    50% {
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+              clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+    55% {
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+              clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+    100% {
+      -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0);
+              clip-path: polygon(0 0, 0 0, 100% 0, 100% 0);
+    }
+  }
+  @keyframes scrim {
+    0% {
+      -webkit-clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 100%);
+              clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 100%);
+    }
+    50% {
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+              clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+    55% {
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+              clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+    100% {
+      -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0);
+              clip-path: polygon(0 0, 0 0, 100% 0, 100% 0);
+    }
+  }
+  

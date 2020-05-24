@@ -1,0 +1,52 @@
+html
+    width: 100%
+    height: 100%
+    margin: 0px
+    padding: 0px
+    // overflow-x: hidden
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    
+body
+    font-family: $font-family-roboto
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+    // overflow-x: hidden
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    font-size: 1.2rem
+    line-height: 1.6
+    overscroll-behavior: none
+    // above line is to fix weird page scrolling
+
+*:focus
+    outline: 0
+
+// ASSIGNING SCROLLBAR STYLING PER ELEMENT INSTEAD
+// to do that we need to add it to the body of each page separately without importing the same into each base.sass
+body::-webkit-scrollbar 
+    width: 0.3em
+
+ 
+body::-webkit-scrollbar-track 
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+
+ 
+body::-webkit-scrollbar-thumb 
+    background-color: darkgrey
+    outline: 1px solid slategrey
+
+
+// USE this for debugging
+// #############################################
+// *
+//     background: #000 !important
+//     color: #0f0 !important
+//     outline: solid #f00 1px !important
+// #############################################

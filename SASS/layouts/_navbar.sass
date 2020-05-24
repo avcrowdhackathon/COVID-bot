@@ -1,0 +1,16 @@
+// Navbar custom styling
+.navbar-bg
+    background-color: $brand-secondary
+    
+.navbar-bg a
+    color: $brand-primary
+
+.navbar-bg li a
+    color: lighten($brand-primary, 20%)
+    &:hover
+        transition: all, .2s, ease-in-out
+        color: $brand-primary
+
+.navbar-bg .active 
+    color: $brand-primary
+    border-bottom: 1px solid $brand-primary

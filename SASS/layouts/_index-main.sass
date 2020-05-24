@@ -1,0 +1,191 @@
+
+// change default hr margin
+hr
+    margin-top: 7px
+    margin-bottom: 7px
+
+// remove default bootstrap padding
+.navbar-toggler
+    padding: 0
+    
+
+// SECTION1
+.section1
+    width: 100%
+    
+    margin: 0
+    padding: 0 0 3px 0
+    // background: url("../assets/img/bg/image2.jpg") no-repeat center center fixed
+    // -webkit-background-size: cover
+    // -moz-background-size: cover
+    // -o-background-size: cover
+    // background-size: cover
+    
+    
+.section1-left
+    
+    text-align: center
+    display: block
+    vertical-align: middle
+    align-content: center
+    align-items: center
+    margin: auto
+    margin-top: 7px
+    @media only screen and (min-width: 0) and (max-width: $phone)
+        margin-top: 0
+    
+.section1-left-inner
+    display: block
+    margin: auto
+    padding: 0
+
+.section1-left h1,h4
+    color: $brand-primary
+
+.cat-btn-wraper
+    display: block
+    margin: auto
+    margin-top: 5px
+
+.cat-btn-wraper button
+    max-width: 100%
+    font-weight: normal
+    font-size: $bot-text-font-size
+    border: 1px solid $brand-primary
+    background-color: $brand-primary
+    color: $white
+    margin-top: 0
+    margin-bottom: 0
+    margin-left: auto
+    margin-right: auto
+    align-self: center
+    text-align: center
+    +border-radius(7px 7px 7px 7px)
+    +box-shadow(1px 1px 0px 1px rgba(0, 0, 0, 0.1))
+    // animation-delay: 3s
+    animation: waggle 1.5s 3s forwards ease-out
+    &:hover
+        transition: all, .2s, ease-in-out
+        color: $brand-primary
+        background-color: $white 
+        border-color: $brand-primary
+@keyframes waggle
+    0% 
+        transform: none
+  
+    50% 
+        transform: rotateZ(-20deg) scale(1.2)
+  
+    60% 
+        transform: rotateZ(25deg) scale(1.2)
+  
+    67.5% 
+        transform: rotateZ(-15deg) scale(1.2)
+  
+    75% 
+        transform: rotateZ(15deg) scale(1.2)
+  
+    82.5% 
+        transform: rotateZ(-12deg) scale(1.2)
+  
+    85% 
+        transform: rotateZ(0) scale(1.2)
+  
+    100% 
+        transform: rotateZ(0) scale(1)
+
+  
+
+
+.section1-right
+    
+    padding-right: 50px
+    padding-left: 0
+    @media only screen and (min-width: $tablet) and (max-width: $desktop)
+        padding-right: 20px
+        padding-left: 0
+    @media only screen and (min-width: $phone) and (max-width: $tablet)
+        padding-right: 0
+    @media only screen and (min-width: 0) and (max-width: $phone)
+        padding: 0
+
+.chat-demo-wraper
+    margin: auto
+    padding: 0
+    display: block
+    
+    height: 50vh
+    @media only screen and (min-width: $tablet) and (max-width: $desktop)
+        height: 35vh
+    @media only screen and (min-width: $phone) and (max-width: $tablet)
+        height: 35vh
+    @media only screen and (min-width: 0) and (max-width: $phone)
+        height: 35vh
+
+    
+    
+
+.chat-demo-wraper iframe
+    display: block
+    position: relative
+    min-height: inherit
+    width: 100%
+    height: 100%
+    margin: auto
+    padding: 0
+
+
+// .chat-demo-wraper iframe
+//     -ms-zoom: 0.75
+//     -moz-transform: scale(0.75)
+//     -moz-transform-origin: 0 0
+//     -o-transform: scale(0.75)
+//     -o-transform-origin: 0 0
+//     -webkit-transform: scale(0.75)
+//     -webkit-transform-origin: 0 0
+
+
+
+
+
+// SECTION 2 INTEGRATIONS
+.integrations-btns-wraper
+    text-align: center
+    align-items: center
+    vertical-align: middle
+    display: block
+    margin: auto
+
+.integrations-btns-wraper button
+    max-width: 100%
+    font-weight: normal
+    font-size: $bot-text-font-size
+    border: 1px solid $brand-secondary
+    background-color: $brand-secondary
+    color: $brand-primary
+    margin: 0 7px 0 7px
+    align-self: center
+    text-align: center
+    +border-radius(7px 7px 7px 7px)
+    +box-shadow(1px 1px 0px 1px rgba(0, 0, 0, 0.1))
+    &:hover
+        transition: all, .2s, ease-in-out
+        color: $white
+        background-color: $brand-primary
+        border-color: $brand-primary
+
+.integrations-btns-wraper img
+    vertical-align: middle
+    padding-bottom: 3px
+    
+
+.chat-frame-wraper
+    +border-radius(5px)
+    border: 1px solid $brand-primary
+    padding: 2px 0 0 0
+
+.chat-frame
+    display: block
+    margin: auto
+    width: 100%
+    height: 80vh

@@ -1,0 +1,102 @@
+.user-msg-text
+    color: $white
+    text-align: left
+    
+
+.user-msg-text h5
+    padding: 0
+    margin: 0
+
+    
+
+.bot-msg-title
+    padding-left: 0
+    padding-right: 0
+    color: $black
+    text-align: center
+
+.bot-msg-title h5
+    padding: 0 0 10px 0
+    margin: 0
+    
+.bot-msg-text
+    color: $black
+    text-align: left
+    padding: 0
+
+.bot-msg-text pre
+    white-space: pre-wrap      /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap  /* Mozilla, since 1999 */
+    white-space: -pre-wrap     /* Opera 4-6 */
+    white-space: -o-pre-wrap   /* Opera 7 */
+    word-wrap: break-word
+    font-family: $font-family-base
+    font-size: $bot-text-font-size
+    padding: 0 0 0 5px
+    margin: 0
+    color: $black
+    overflow: hidden
+
+.bot-msg-source
+    font-size: 0.9rem
+    text-align: right
+
+.bot-msg-source a
+    color: $black
+
+.bot-msg-media
+    padding: 0
+    margin: 0
+    align-items: center
+
+.bot-msg-media .bot-msg-video
+    text-align: center
+    align-items: center
+    align-content: center
+
+.bot-msg-media .bot-msg-video .video-frame
+    padding-top: 5px
+    max-width: 100%
+    align-self: center
+
+.bot-suggestions .suggestion-wraper
+    display: block
+    margin: auto
+    align-items: center
+    align-self: center
+    text-align: center
+    align-content: center
+    padding: 5px 0 5px 0
+
+.bot-suggestions button
+    max-width: 100%
+    font-weight: normal
+    font-size: $bot-text-font-size
+    border: 1px solid $brand-primary
+    color: $brand-primary
+    margin-top: 0
+    margin-bottom: 0
+    margin-left: auto
+    margin-right: auto
+    align-self: center
+    text-align: center
+    +border-radius(20px 20px 20px 20px)
+    +box-shadow(1px 1px 0px 1px rgba(0, 0, 0, 0.1))
+    &:hover
+        transition: all, .2s, ease-in-out
+        color: $white
+        background-color: $brand-primary
+        border-color: $brand-primary
+
+
+// dots animation directly put into CSS/typing-dots.css
+.chat-bot-msg-typing .chat-oval-right
+    height: 50px
+    width: 85px
+
+.bot-msg-country-data span
+    color: $country-data-color
+
+.bot-msg-country-data .updated-time
+    font-size: 0.9rem
+    color: $country-data-color

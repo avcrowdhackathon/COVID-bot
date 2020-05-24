@@ -1,0 +1,77 @@
+.web-container 
+    border: 3px solid #f1f1f1
+    +border-radius(0 4px 0 4px)
+    margin: 15px 0 15px 0
+    @media only screen and (min-width: $tablet) and (max-width: $desktop)
+        margin: 0 40px 0 0
+    @media only screen and (min-width: $phone) and (max-width: $tablet)
+        margin: 15px 0 15px 0
+    @media only screen and (min-width: 0) and (max-width: $phone)
+        margin: 15px 0 15px 0
+
+
+/* Container for columns and the top "toolbar" */
+.web-row 
+    padding: 10px
+    background: #f1f1f1
+    // +border-radius(0 4px 0 4px)
+
+
+/* Create three unequal columns that floats next to each other */
+.web-column 
+    float: left
+
+
+.web-left 
+    width: 20%
+
+
+.web-right 
+    width: 10%
+
+
+.web-middle 
+    width: 70%
+
+
+/* Clear floats after the columns */
+.web-row:after 
+    content: ""
+    display: table
+    clear: both
+
+
+/* Three dots */
+.web-dot 
+    margin-bottom: 3px
+    height: 11px
+    width: 11px
+    background-color: #bbb
+    +border-radius(50%)
+    display: inline-block
+    @media only screen and (min-width: $tablet) and (max-width: $desktop)
+        width: 9px
+        height: 9px
+
+
+/* Style the input field */
+.web-column input[type=text] 
+    width: 100%
+    +border-radius(3px)
+    border: none
+    background-color: white
+    margin-top: -8px
+    height: 23px
+    color: #666
+    padding: 5px
+    font-size: smaller
+
+
+/* Three bars (hamburger menu) */
+.web-bar 
+    width: 17px
+    height: 3px
+    background-color: #aaa
+    margin: 3px 0
+    display: block
+
